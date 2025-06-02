@@ -17,7 +17,7 @@ This tool is a Node.js application that automatically translates English texts i
 - Hata yönetimi ve raporlama
 
 - Automatically detects `.strings` files of MacOS Affinity applications
-- Translates from English to Turkish using Bing Translate API
+- Translates from English to other languages using Bing Translate API
 - Parallel processing support for batch translation
 - Visual progress bar to show process status
 - UTF-16LE encoding support for file reading and writing
@@ -27,18 +27,18 @@ This tool is a Node.js application that automatically translates English texts i
 ## Türkçeleştirilmiş dosyaları kullanma
 ## Using the Translated Files
 
-- Affinity programlarını Türkçe kullanmak için Macos cihazınızda aşağıdaki adımları takip edin
+- Affinity programlarını farklı dillerde kullanmak için Macos cihazınızda aşağıdaki adımları takip edin
 - Macos üzerinde finderdan uygulamalar sekmesinde affinity programına sağ tıklayın.
 - Paket içeriğini göstere tıklayın.
-- Contents içinden resources olan klasöre girip resoruces içindeki tr.lproj dosyasını o klasöre yapıştırın.
-- Geri gelin frameworks içinden `libcocoaui.framework` klasörüne girerek aynı şekilde `resources` içine libcocoaui.framework içindki tr.lproj klasörünü yapıştırın.
+- Contents içinden resources olan klasöre girip resoruces içindeki tr.lproj (veya diğer dil kodu.lproj) dosyasını o klasöre yapıştırın.
+- Geri gelin frameworks içinden `libcocoaui.framework` klasörüne girerek aynı şekilde `resources` içine libcocoaui.framework içindeki tr.lproj (veya diğer dil kodu.lproj) klasörünü yapıştırın.
 - Başka dillere çevirmek için translate.js programını bu iki ana klasördeki en.lproj dosyalarını kopyalayıp başka dilde yeniden isimlendirip translate.js i de içine atıp programı çalıştırarak çeviriyi tamamlayın. çevrilecek dili translate.js içinden düzenleyin.
 
-- To use Affinity programs in Turkish on your MacOS device, follow the steps below
+- To use Affinity programs in different languages on your MacOS device, follow the steps below
 - Right-click on the Affinity program in the Applications section of Finder on MacOS.
 - Click on 'Show Package Contents'.
-- Enter the folder named 'resources' inside 'Contents' and paste the 'tr.lproj' file from resources into that folder.
-- Go back and enter the 'libcocoaui.framework' folder inside 'frameworks', and similarly, paste the 'tr.lproj' folder from inside 'libcocoaui.framework' into 'resources'.
+- Enter the folder named 'resources' inside 'Contents' and paste the 'tr.lproj' (or other language code.lproj) file from resources into that folder.
+- Go back and enter the 'libcocoaui.framework' folder inside 'frameworks', and similarly, paste the 'tr.lproj' (or other language code.lproj) folder from inside 'libcocoaui.framework' into 'resources'.
 - To translate into other languages, copy the 'en.lproj' files from these two main folders, rename them to another language, place the 'translate.js' file inside, and run the program to complete the translation. Edit the language to be translated within 'translate.js'.
 
 ## Gereksinimler
@@ -81,11 +81,11 @@ node translate.js
 3. Program otomatik olarak:
 3. The program automatically:
    - Paket içindeki resources içindeki en.lprj içindeki tüm `.strings` dosyalarını tespit eder
-   - Her dosyadaki İngilizce metinleri otomatik olarak sıradan Türkçe'ye çevirir
+   - Her dosyadaki İngilizce metinleri seçilen dile otomatik olarak çevirir
    - Çevirileri orijinal dosyalara kaydeder
 
    - Detects all `.strings` files in the en.lprj folder inside the resources package
-   - Automatically translates English texts to Turkish
+   - Automatically translates English texts to the selected language
    - Saves translations to original files
 
 ## Teknik Detaylar
@@ -119,8 +119,14 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) file for 
 ## İletişim ve Destek
 ## Contact and Support
 
-t.me/tasarimatolyesi grubuna katılarak sorularınızı sorabilir ve ücretsiz diğer kaynaklardan yararlanabilirsiniz.
-You can join t.me/tasarimatolyesi group to ask your questions and benefit from other free resources.
+Sorularınız ve destek için:
+For questions and support:
 
-Tüm hakları t.me/falquan kişisine aittir. Para ile satılamaz ve kaynak gösterilmeden yayınlanamaz.
-All rights belong to t.me/falquan. It cannot be sold for money and cannot be published without proper attribution.
+- Telegram Grubu / Telegram Group: [t.me/tasarimatolyesi](https://t.me/tasarimatolyesi)
+- Geliştirici / Developer: [t.me/falquan](https://t.me/falquan)
+
+## Telif Hakkı
+## Copyright
+
+Tüm hakları [@falquan](https://t.me/falquan) kişisine aittir. Para ile satılamaz ve kaynak gösterilmeden yayınlanamaz.
+All rights belong to [@falquan](https://t.me/falquan). It cannot be sold for money and cannot be published without proper attribution.
