@@ -1,5 +1,6 @@
+# Affinity Macos - iOS Strings Dosyası Çeviri Aracı
 # Affinity Macos - Strings Dosyası Çeviri Aracı
-# Affinity Macos - Strings File Translation Tool
+
 
 Bu araç, iOS uygulamalarında kullanılan `.strings` dosyalarındaki İngilizce metinleri otomatik olarak Türkçe'ye çeviren bir Node.js uygulamasıdır.
 
