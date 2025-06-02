@@ -1,22 +1,22 @@
-# Affinity Designer Localizator - iOS Strings Dosyası Çeviri Aracı
-# Affinity Designer Localizator - iOS Strings File Translation Tool
+# Affinity Designer Localizator - MACOS Strings Dosyası Çeviri Aracı
+# Affinity Designer Localizator - MACOS Strings File Translation Tool
 
-Bu araç, iOS uygulamalarında kullanılan `.strings` dosyalarındaki İngilizce metinleri otomatik olarak Türkçe'ye çeviren bir Node.js uygulamasıdır.
+Bu araç, Affinity Designer ve diğer Affinity uygulamalarının MacOS sürümlerindeki `.strings` dosyalarındaki İngilizce metinleri otomatik olarak başka dillere çeviren bir Node.js uygulamasıdır.
 
-This tool is a Node.js application that automatically translates English texts in iOS `.strings` files to Turkish.
+This tool is a Node.js application that automatically translates English texts in `.strings` files of Affinity Designer and other Affinity applications' MacOS versions to other languages.
 
 ## Özellikler
 ## Features
 
-- `.strings` dosyalarını otomatik olarak tespit eder
-- Bing Translate API kullanarak İngilizce'den Türkçe'ye çeviri yapar
+- MacOS Affinity uygulamalarının `.strings` dosyalarını otomatik olarak tespit eder
+- Bing Translate API kullanarak İngilizce'den başka dillere çeviri yapar
 - Toplu çeviri işlemi için paralel işleme desteği
 - Görsel ilerleme çubuğu ile işlem durumunu gösterir
 - UTF-16LE kodlaması ile dosya okuma ve yazma desteği
 - Rate limiting koruması
 - Hata yönetimi ve raporlama
 
-- Automatically detects `.strings` files
+- Automatically detects `.strings` files of MacOS Affinity applications
 - Translates from English to Turkish using Bing Translate API
 - Parallel processing support for batch translation
 - Visual progress bar to show process status
