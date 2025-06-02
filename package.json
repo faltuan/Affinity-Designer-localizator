@@ -1,0 +1,22 @@
+{
+  "name": "cevir",
+  "version": "1.0.0",
+  "description": "iOS .strings dosyalarını İngilizce'den Türkçe'ye çeviren araç",
+  "main": "translate.js",
+  "type": "module",
+  "scripts": {
+    "start": "node translate.js"
+  },
+  "keywords": [
+    "Affinity Designer",
+    "Affinity",
+    "translate",
+    "Affinity Designer Türkçe",
+    "localization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bing-translate-api": "^2.9.1"
+  }
+} 
